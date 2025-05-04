@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="a2style.css">
+        <link rel="stylesheet" href="libs/simple-slider.css">
+    </head>
+    <body>
+        <h1>INST377 - Dogs</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+            </ul>
+        </nav>
+        <script src="simpleslider.js"></script>
+
+        <main>
+            <h2>Dogs! &#128054</h2>
+            <div id="carousel" class="slider"></div>
+            <div id="breed-btns" class="breed-btns"></div>
+            <div id="breed-info" class="hidden"></div>
+        </main>
+
+        <div id="voice-controls">
+            <h3>In this web page there are options to navigate using audio!</h3>
+            <p>Make sure your mic is enabled to use this feature.</p>
+            <dl>
+                <li><strong>Navigate to a different page</strong></li>
+                <dd>Say "Navigate to *page*"</dd>
+                <li><strong>Change the page color</strong></li>
+                <dd>Say "Change the color to *color*"</dd>
+                <li><strong>Say Hello back to you</strong></li>
+                <dd>Say "Hello"</dd>
+            </dl>
+            <div class="audio-btns">
+                <button id = "start-audio" class = "listen-on" onclick="annyang.start()">Turn On Listening</button>
+                <button id = "stop-audio" class = "listen-off" onclick="annyang.abort()">Turn Off Listening</button>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+        <script src="a2.js"></script>
+        <script src="dogs.js"></script>
+    </body>
+</html>
